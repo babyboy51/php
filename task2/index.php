@@ -1,26 +1,40 @@
-<?php $a=3;
-$b+=7;
-echo $a+$b;?>
+<?php
+$a = 3;
+$b += 7;
+echo $a+$b;
 
-<?php $array_month=["january","february","March","April","May","June","July","August","September",
-"October","November","Decemder"];
-echo $array_month[7];?>
+$array_month = [
+"january",
+"february",
+"March",
+"April",
+"May",
+"June",
+"July",
+"August",
+"September",
+"October",
+"November",
+"Decemder"
+];
+
+echo $array_month[7];
 
 
-<?php $hello="Hello,";
+$hello = "Hello,";
 $name.="babyboy";
 $world.="'s World!";
 echo $hello;
 echo $name;
-echo $world;?>
+echo $world;
 
 
-<?php $tech_boost="tech";
-$tech_boost.="_boost";
-echo $tech_boost;?>
+$tech_boost = "tech";
+$tech_boost.= "_boost";
+echo $tech_boost;
 
 
-<?php $calendar_2018 =[
+$calendar_2018 = [
  "January" => "1月",
   "February" => "2月",
   "March" => "3月",
@@ -34,4 +48,4 @@ echo $tech_boost;?>
   "November" => "11月",
   "December" => "12月"
  ];
- echo $calendar_2018[December];?>
+ echo $calendar_2018["December"];
