@@ -10,20 +10,21 @@
  }
 
 // 2
-for($i =1; $i<10000;$i++){
+for($i =1; $i<=10000;$i++){
   echo $i;
+  echo "\n";
 }
 
 // 3
 $fruits = array("apple","orange","melon","lemon","banana");
-foreach ($fruits as $fruits){
-  echo "要素は" . $fruits;
+foreach ($fruits as $value){
+  echo "要素は" . $value;
   echo "\n";
 }
 // 4
 $start = 1;
 $end = 100;
-for($i = $start;$i < $end; $i++){
+for($i = $start; $i < $end; $i++){
 if($i % 5== 0){
 echo $i;
   }
