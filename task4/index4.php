@@ -1,45 +1,36 @@
-<!-- 1 -->
 <?php
-function sum($max){
-  $result = 0;
-  for($i = 1; $i<=$max; $i++){
-    $result+=$i;
- }
-  return $result;
+//1
+function double($x){
+    echo $x * 2;
+    echo "\n";
 }
-echo sum(10);
-
-
-// 2
-
-function f($a,$b){
-  return $a+ $b;
+double(2);
+//2
+function f($a, $b){
+    echo $a + $b;
+    echo "\n";
 }
-echo f(3,8);
-
-
-// 3
-function f($arr){
-  $total=1;
-  foreach($arr as $value){
-    $total *= $value;
-  }
-  return $total;
-}
-echo f(array(1,3,5,7,9)) . "\n";
-
-
-// 4
-function max_array($arr){
-  $max_number = $arr[0];
-  foreach($arr as $a){
-    if ($max_number < $a){
-      $max_number = $a;
+f(1, 2);
+//3
+function arr($arr){
+    $total = 1;
+    foreach($arr as $ar){
+        $total *= $ar;
     }
-  }
-  return $max_number;
+    return $total;
 }
-echo max_array
+echo arr(array(1, 3, 5, 7, 9)) . "\n";
+//4
+function max_array($max_arr){
+    $max_number = $max_arr[0];
+    foreach($max_arr as $value){
+        if ($max_number < $value){
+            $max_number = $value;
+        }
+    }
+    return $max_number;
+}
+echo max_array(array(1, 3, 5, 7, 9));
 // 5
 // strip_tags
 
